@@ -76,6 +76,21 @@
       </div>        
     </section>
 
-    
+    <audio id="myAudio" hidden autoplay loop>
+        <source src="../assets/Anggi.mp3" type="audio/mpeg">
+        <source src="../assets/Anggi.ogg" type="audio/ogg">
+      </audio>
+
+    <script>
+        function playAudio() {
+          var audio = document.getElementById("myAudio");
+          audio.play();
+        }
+      
+        function pauseAudio() {
+          var audio = document.getElementById("myAudio");
+          audio.pause();
+        }
+      </script>
 </body>
 </html>
